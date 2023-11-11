@@ -89,6 +89,7 @@ body {
     padding-right: 5%;
     padding-bottom: 2.5%;
     margin-bottom: -1.5vh;
+    box-shadow: black inset 0px 0px 5px;
 }
 
 #formWrapper p {
@@ -118,6 +119,7 @@ input {
     height: 20px;
     border-radius: 5px;
     appearance: none;
+    border: rgba(0, 0, 0, 0.253) groove 2px ;
 }
 
 button {
@@ -144,4 +146,16 @@ h3 {
 #login {
     margin-top: -1vh;
     margin-bottom: 3vh;
+}
+
+input {
+    outline: none;
+}
+
+input:focus-visible:valid {
+border: 2px solid green !important;
+}
+
+input:focus-visible:invalid {
+    border: 2px solid red !important;
 }

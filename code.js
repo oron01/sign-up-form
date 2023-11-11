@@ -4,7 +4,6 @@ let password = document.querySelector("#password")
 let confirmPassword = document.querySelector("#confirmPassword")
 
 let getPasswordValidity = () => {
-    alert(password.value)
     if (confirmPassword.value == "") {confirmPassword.setCustomValidity("Please confirm your password")}
     else if (password.value !== confirmPassword.value) {
         confirmPassword.setCustomValidity("Passwords don't match, please try again.")

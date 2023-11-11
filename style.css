@@ -153,9 +153,9 @@ input {
 }
 
 input:focus-visible:valid {
-border: 2px solid green !important;
+border: 2px solid green;
 }
 
 input:focus-visible:invalid {
-    border: 2px solid red !important;
+    border: 2px solid red;
 }

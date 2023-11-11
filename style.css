@@ -101,9 +101,10 @@ body {
 #formWrapper > form > div {
     display: flex;
     gap:5%;
+    position: relative
 }
 
-label {
+#formWrapper > form > div {
     display: flex;
     flex-direction: column;
     min-width: 0%;
@@ -116,7 +117,7 @@ label {
 }
 
 input {
-    height: 20px;
+    height: 1.75rem;
     border-radius: 5px;
     appearance: none;
     border: rgba(0, 0, 0, 0.253) groove 2px ;
@@ -159,3 +160,49 @@ border: 2px solid green;
 input:focus-visible:invalid {
     border: 2px solid red;
 }
+
+.inputRow {
+display: flex;
+flex-direction: row;
+}
+
+.inputWrapper {
+    width: 100%;
+    position: relative;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    margin: 3% 0% 3% 0%;
+}
+
+span {
+    position: absolute;
+    left: 0.35rem;
+    top: 0.45rem;
+    pointer-events: none;
+    
+}
+
+input:valid ~ span{
+    transform: translateY(-2.1rem);
+    padding: 3px;
+    background-color: green;
+    border-radius: 10px;
+    transition: transform 1s;
+
+}
+
+input:not(:placeholder-shown):invalid ~ span{
+    transform: translateY(-2.1rem);
+    padding: 3px;
+    background-color: red;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+/* 
+input:invalid:focus-visible ~ span {
+    transform: translateY(-2rem);
+    padding: 3px;
+    background-color: red;
+    border-radius: 10px;
+    transition: transform 1s;
+} */

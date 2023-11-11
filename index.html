@@ -22,23 +22,43 @@
                     <form id="form" action="" method="post">
                         <p>Let's do this!</p>
                         <div>
-                            <label for="fName"> FIRST NAME:
-                                <input type="text" name="fName" id="fName" required></label>
-                            <label for="lName"> LAST NAME:
-                                <input type="text" name="lName" id="lName" required></label>
+                            <div class="inputRow">
+                                <div class="inputWrapper">
+                                    <label for="fName"></label>
+                                    <input placeholder="" type="text" name="fName" id="fName" required>
+                                    <span>FIRST NAME:</span>
+                                </div>
+                                <div class="inputWrapper">
+                                    <label for="lName"></label>
+                                    <input placeholder="" type="text" name="lName" id="lName" required>
+                                    <span>LAST NAME:</span>
+                                </div>
                             </div>
-                        <div>
-                            <label for="email">EMAIL:
-                                <input type="email" id="email" name="email"></label>
-                            <label for="phoneNumber">PHONE NUMBER:
-                                <input type="tel" id="phoneNumber" name="phoneNumber" required></label>
+                            <div class="inputRow">
+                                <div class="inputWrapper">
+                                    <label for="email"></label>
+                                    <input placeholder="" type="email" id="email" name="email" required>
+                                    <span>EMAIL:</span>
+                                </div>
+                                <div class="inputWrapper">
+                                    <label for="telephoneNumber"></label>
+                                    <input placeholder="" type="tel" id="telephoneNumber" name="telephoneNumber" required>
+                                    <span>TELEPHONE NUMBER:</span>
+                                </div>
                             </div>
-                        <div>
-                            <label for="password"> PASSWORD:
-                                <input type="password" name="password" id="password" minlength="6" required></label>
-                            <label for="confirmPassword"> CONFIRM PASSWORD:
-                                <input type="password" id="confirmPassword" minlength="6" required></label>
+                            <div class="inputRow">
+                                <div class="inputWrapper">
+                                    <label for="password"></label>
+                                    <input placeholder="" type="password" id="password" name="password" required>
+                                    <span>PASSWORD:</span>
+                                </div>
+                                <div class="inputWrapper">
+                                    <label for="confirmPassword"></label>
+                                    <input placeholder="" type="password" id="confirmPassword" required>
+                                    <span>CONFIRM PASSWORD</span>
+                                </div>
                             </div>
+                        </div>
                     </form>
                 </div>
                 <button type="submit" form="form">Create Account</button>

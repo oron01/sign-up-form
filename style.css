@@ -1,7 +1,22 @@
+@font-face {
+    font-family: kanit-black;
+    src: url(Kanit-Black.ttf);
+}
+@font-face {
+    font-family: kanit-bold;
+    src: url(Kanit-Bold.ttf);
+}
+
+@font-face {
+    font-family: kanit-regular;
+    src: url(Kanit-Regular.ttf);
+}
+
 body {
-    height: 100vh;
+    height: 93vh;
     margin: 0;
     background-color: rgb(27, 27, 27);
+    font-family: kanit-regular;
 
 }
 
@@ -29,7 +44,7 @@ body {
 #contentContainer {
     position: relative;
     flex: 0 0 60%;
-    background: white;
+    background: lightgrey;
     height: 80vh;
     /* margin: 10vh 0; */
     display: flex;
@@ -54,15 +69,32 @@ body {
 }
 
 #formContainer {
-    background: grey;
+    /* background: grey; */
     height: 55vh;
     display: flex;
     flex-direction: column;
+    justify-content:space-around;
+
 }
 
 #formContainer > * {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+#formWrapper {
+    background-color: white;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
+    margin-bottom: -1.5vh;
+}
+
+#formWrapper p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 12px 0px;
 }
 
 #formWrapper > form > div {
@@ -71,6 +103,8 @@ body {
 }
 
 label {
+    display: flex;
+    flex-direction: column;
     min-width: 0%;
     width: 100%;
     appearance: none;
@@ -86,3 +120,28 @@ input {
     appearance: none;
 }
 
+button {
+    margin: 2vh;
+    width: 30%;
+    height: 10%;
+    border-radius: 15px;
+    background-color: rgb(207, 17, 65);
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(207, 17, 65);
+    font-weight: bold;
+}
+
+h3 {
+    font-weight:600;
+}
+
+#login {
+    margin-top: -1vh;
+    margin-bottom: 3vh;
+}

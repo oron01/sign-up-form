@@ -68,7 +68,7 @@ body {
     height: 90%;
 }
 
-#formContainer {
+.formContainer {
     /* background: grey; */
     height: 55vh;
     display: flex;
@@ -77,12 +77,12 @@ body {
 
 }
 
-#formContainer > * {
+.formContainer > * {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-#formWrapper {
+.formWrapper {
     background-color: white;
     margin: 0;
     padding-left: 5%;
@@ -92,19 +92,20 @@ body {
     box-shadow: black inset 0px 0px 5px;
 }
 
-#formWrapper p {
+.formWrapper p {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 12px 0px;
+    padding-top: 12px;
 }
 
-#formWrapper > form > div {
+.formWrapper > form > div {
     display: flex;
     gap:5%;
     position: relative
 }
 
-#formWrapper > form > div {
+.formWrapper > form > div {
     display: flex;
     flex-direction: column;
     min-width: 0%;
@@ -125,7 +126,9 @@ input {
 
 button {
     margin: 2vh;
+    margin-top: 3vh;
     width: 30%;
+    padding: 10px;
     height: 10%;
     border-radius: 15px;
     background-color: rgb(207, 17, 65);
@@ -196,6 +199,13 @@ input:not(:placeholder-shown):invalid ~ span{
     background-color: red;
     border-radius: 10px;
     transition: transform 1s;
+}
+
+p.error {
+    position: absolute;
+    top: 1.25rem;
+    padding: 5px;
+    font-size: 0.75rem;
 }
 
 /* 

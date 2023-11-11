@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up now!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
 </head>
 <body>
     <div id="pageContainer">
@@ -22,7 +23,7 @@
                         <p>Let's do this!</p>
                         <div>
                             <label for="fName"> FIRST NAME:
-                                <input type="text" name="fName" id="fName"></label>
+                                <input type="text" name="fName" id="fName" required></label>
                             <label for="lName"> LAST NAME:
                                 <input type="text" name="lName" id="lName"></label>
                             </div>
@@ -34,9 +35,9 @@
                             </div>
                         <div>
                             <label for="password"> PASSWORD:
-                                <input type="password" name="password" id="password"></label>
+                                <input type="password" name="password" id="password" minlength="6" required></label>
                             <label for="confirmPassword"> CONFIRM PASSWORD:
-                                <input type="password" id="confirmPassword"></label>
+                                <input type="password" id="confirmPassword" minlength="6" required></label>
                             </div>
                     </form>
                 </div>

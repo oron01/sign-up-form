@@ -9,6 +9,7 @@ body {
     position: relative;;
     height: 80vh;
     width: 95vw;
+    max-width: 1225px;
     margin: 10vh auto;
     display: flex;
     border: black solid 3px;
@@ -56,4 +57,32 @@ body {
     background: grey;
     height: 55vh;
     display: flex;
+    flex-direction: column;
 }
+
+#formContainer > * {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#formWrapper > form > div {
+    display: flex;
+    gap:5%;
+}
+
+label {
+    min-width: 0%;
+    width: 100%;
+    appearance: none;
+    color: rgb(36, 36, 36);
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+
+}
+
+input {
+    height: 20px;
+    border-radius: 5px;
+    appearance: none;
+}
+
